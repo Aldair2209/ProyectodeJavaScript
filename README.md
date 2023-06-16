@@ -4,6 +4,7 @@ PAGINA DE LA FALCULTAD
 
 Pagina de la facultad de Ingenieria de Sistemas e Informatica autores ( Jean Paul Zurita, Aldair Smith Andrade Gutierrez)
 
-![logoutp4](https://github.com/Aldair2209/ProyectodeJavaScript/assets/133375417/f8045ad0-8181-415f-82ca-fa4199edf689)
+![logo-utp](https://github.com/Aldair2209/ProyectodeJavaScript/assets/133375417/220dd3e3-3530-406b-9552-fc208eab2aa1)
+
 
 
