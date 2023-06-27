@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  
+}
+
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #eee;
+  color: #333;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  overflow: hidden;  /*=============== para quitarle la barra al dezliazamiento ===============*/
+  
+}
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+  left: -14px;
+}
+
+.wrapper i:last-child {
+  right: -14px;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #DDE6ED;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.carousel .card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2),
+              0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .card:hover {
+  background-color: #fff; /*=============== color al seleccionar ===============*/
+}
+
+.carousel .card .img {
+  background: #27374D;
+  height: 148px;
+  width: 148px;
+  border-radius: 10%;  /*=============== bordes de la img ===============*/
+  
+}
+
+
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 4px solid #fff;  /*=============== bordes de la img ===============*/
+}
+
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+  color: #333;
+}
+
+.carousel .card span {
+  color: #526D82;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+.carousel .card h2,
+.carousel .card span {
+  opacity: 0; /* Inicialmente, ocultamos las letras */
+  animation: typing 0.8s ease-in-out forwards; /* Aplicamos la animación para mostrar las letras */
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0; /* Al inicio de la animación, las letras están ocultas */
+    transform: translateY(10px); /* Desplazamos las letras hacia abajo */
+  }
+  100% {
+    opacity: 1; /* Al final de la animación, las letras están completamente visibles */
+    transform: translateY(0); /* Las letras vuelven a su posición original */
+  }
+}

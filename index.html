@@ -1,124 +1,326 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="archivos/css/styles.css">
+    <!--=============== FONTAWESOME ===============-->
 
-        <title>Universidad Tegnologica del Peru</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <img src="archivos/img/logo-utp.png" alt="" class="nav__logo">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bx-home-alt nav__icon'></i>
-                                <span class="nav__name">Home</span>
-                            </a>
-                        </li>
-                        
-                        <li class="nav__item">
-                            <a href="#docente" class="nav__link">
-                                <i class='bx bx-user nav__icon'></i>
-                                <span class="nav__name">Docentes</span>
-                            </a>
-                        </li>
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-                        <li class="nav__item">
-                            <a href="#instalaciones" class="nav__link">
-                                <i class='bx bxs-school nav__icon'></i>
-                                <span class="nav__name">Instalaciones</span>
-                            </a>
-                        </li>
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-                        <li class="nav__item">
-                            <a href="#noticias" class="nav__link">
-                                 <!--<i class='bx bx-briefcase-alt nav__icon'></i>-->
-                                <img width="25" height="25" src="https://img.icons8.com/fluency-systems-regular/48/news.png" alt="news" class="nav__icon"/>
-                                <span class="nav__name">Noticias</span>
-                            </a>
-                        </li>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="archivos/css/styles.css">
+    <link rel="stylesheet" href="archivos/css/contactanos.css">
+    <link rel="stylesheet" href="archivos/css/docentes.css">
+    <link rel="stylesheet" href="archivos/css/noticias.css">
+    
 
-                        <li class="nav__item">
-                            <a href="#contactme" class="nav__link">
-                                <i class='bx bx-message-square-detail nav__icon'></i>
-                                
-                                <span class="nav__name">Contactanos</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#" class="nav__img">Sistemas e Informatica</a>
-                
-            </nav>
-        </header>
+    <title>Universidad Tecnológica del Perú</title>
+</head>
 
-        <main>
-            <!--=============== HOME ===============-->
-            <section class="hero section__height" id="home">
-                <div class="hero-text">
-                    
-                    
-                    <h1>Ingeniería de Sistemas e Informática</h1>
-                    <p>Contamos con mas de 60 laboratorios y simuladores</p>
-                    <a href="#contactme" class="nav__link">Contactanos</a>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <img src="archivos/img/HERO/logo-utp.png" alt="" class="nav__logo">
+    
 
-                </div>
-                <div class="hero-img">
-                    <img src="archivos/img/chico.png">
-                </div> 
-                
-            </section>
-            <div class="icons">
-                <a href=""><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-youtube-line"></i></a>
-                <a href=""><i class="ri-facebook-box-line"></i></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#docente" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Docentes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#instalaciones" class="nav__link">
+                            <i class='bx bxs-school nav__icon'></i>
+                            <span class="nav__name">Instalaciones</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#noticias" class="nav__link">
+                            <!--<i class='bx bx-briefcase-alt nav__icon'></i>-->
+                            <img width="25" height="25" src="https://img.icons8.com/fluency-systems-regular/48/news.png"
+                                alt="news" class="nav__icon" />
+                            <span class="nav__name">Noticias</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contactme" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+
+                            <span class="nav__name">Contáctanos</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <!--=============== Contactanos ===============-->
-            <section class="container section section__height" id="contactme">
-                <h2 class="section__title">Contactanos</h2>
-            </section>
+            <a href="#" class="nav__img">Sistemas e Informática</a>
 
-            <!--=============== Nuestros Docentes ===============-->
-            <section class="container section section__height" id="docente">
-                <h2 class="section__title">Nuestros Docentes</h2>
-                
-            </section>
-            <!--=============== Instalaciones y laboratorios===============-->
-            <section class="container section section__height" id="instalaciones">
-                <h2 class="section__title">Instalaciones y laboratorios</h2>
-            </section>
+        </nav>
+    </header>
 
-            <!--=============== Noticias ===============-->
-            <section class="container section section__height" id="noticias">
-                <h2 class="section__title">Noticias</h2>
-                
-            </section>
+    <main>
+        <!--=============== HOME ===============-->
+        <section class="hero section__height" id="home">
+            <div class="hero-text">
 
 
-        </main>
-        
+                <h1>Ingeniería de Sistemas e Informática</h1>
+                <p>Contamos con más de 60 laboratorios y simuladores</p>
+                <a href="#contactme" class="nav__link">Contáctanos</a>
 
-        <!--=============== Scroll desplazamiento===============-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+            </div>
+            <div class="hero-img">
+                <img src="archivos/img/HERO/chico-corazon.png">
+            </div>
+
+        </section>
+        <div class="icons">
+            <a href="https://www.instagram.com/universidadutp/?hl=es" target="_blank"><i
+                    class="ri-instagram-line"></i></a>
+            <a href="https://www.youtube.com/channel/UCLQEBv7WN0SgOFD_nRLraRQ" target="_blank"><i
+                    class="ri-youtube-line"></i></a>
+            <a href="https://www.facebook.com/UTP.Peru/?locale=es_LA" target="_blank"><i
+                    class="ri-facebook-box-line"></i></a>
+        </div>
+        <!--=============== Contactanos ===============-->
+        <section class="section" id="contactme" >
+            <h2 class="section__title">¡¡Desaprende lo que te limita!!</h2>
+
+              <div class="container1">
+
+                <div class="form1">
+                    <div class="contact-info">
+                        <h3 class="title">Universidad Tecnológica del Perú</h3>
+                        <!--<p class="txt">
+                            Desaprende lo que te limita!!
+                        </p>-->
+
+                        <div class="info">
+                            <div class="information">
+                                <img src="archivos/img/CONTACTANOS/senal-abierta.png" class="icon" alt="" />
+                                <p>Lunes - Sab : 8:30 a.m a 8:00 p.m</p>
+                            </div>
+
+                            <div class="information">
+                                <img src="archivos/img/CONTACTANOS/telefono rojo.png" class="icon" alt="" />
+                                <p>Lima: (01) 315 9600 - Provincias: 0801 19 600</p>
+                            </div>
+                            <div class="information">
+                                <img src="archivos/img/CONTACTANOS/carta-de-amor.png" class="icon" alt="" />
+                                <p>admision@utp.edu.pe</p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <p>Redes sociales:</p>
+                            <div class="social-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form1">
+                        <span class="circle one"></span>
+                        <span class="circle two"></span>
+
+                        <form action="https://formspree.io/f/xvonjrgz" method="POST" autocomplete="off">
+                            <h3 class="title">Contáctanos</h3>
+                            <div class="input-container1">
+                                <input type="text" name="Nombre" class="input" />
+                                <label for="">Nombres</label>
+                                <span>Username</span>
+                            </div>
+                            <div class="input-container1">
+                                <input type="text" name="Apellido Paterno" class="input" />
+                                <label for="">Apellido Paterno</label>
+                                <span>apellido paterno</span>
+                            </div>
+                            <div class="input-container1">
+                                <input type="text" name="Apellido Materno" class="input" />
+                                <label for="">Apellido Materno</label>
+                                <span>Apellido materno</span>
+                            </div>
+                            <div class="input-container1">
+                                <input type="email" name="Correo electronico" class="input" />
+                                <label for="">Correo Electrónico</label>
+                                <span>correo electronico</span>
+                            </div>
+                            <div class="input-container1">
+                                <input type="text" name="Dni" class="input" />
+                                <label for="">Dni</label>
+                                <span>dni</span>
+                            </div>
+                            <div class="input-container1">
+                                <input type="text" name="Celular" class="input" />
+                                <label for="">Celular</label>
+                                <span>celular</span>
+                            </div>
+                            <div class="input-container1">
+                                <input type="text" name="Sede" class="input" />
+                                <label for="">¿En que campus te gustaría estudiar?</label>
+                                <span>En que campo te gustaria estudiar?</span>
+                            </div>
+                            <input type="submit" value="Enviar" class="btn" />
+                        </form>
+                    </div>
+                </div>
+            </div>
 
 
-        <!--=============== JS ===============-->
-        <script src="archivos/js/main.js"></script>
-        
-    </body>
+        </section>
+
+        <!--=============== Nuestros Docentes ===============-->
+        <section class="container section section__height" id="docente">
+            <h2 class="section__title">Nuestros Docentes</h2>
+
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="archivos/img/DOCENTES/1.png" alt="img" draggable="false"></div>
+                        <h2>Edy pacherrez</h2>
+                        <span>Sales Manager</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="archivos/img/DOCENTES/1.png" alt="img" draggable="false"></div>
+                        <h2>Joenas Brauers</h2>
+                        <span>Web Developer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="archivos/img/DOCENTES/1.png" alt="img" draggable="false"></div>
+                        <h2>Lariach French</h2>
+                        <span>Online Teacher</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="archivos/img/DOCENTES/1.png" alt="img" draggable="false"></div>
+                        <h2>James Khosravi</h2>
+                        <span>Freelancer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="archivos/img/DOCENTES/1.png" alt="img" draggable="false"></div>
+                        <h2>Kristina Zasiadko</h2>
+                        <span>Bank Manager</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="archivos/img/DOCENTES/1.png" alt="img" draggable="false"></div>
+                        <h2>Donald Horton</h2>
+                        <span>App Designer</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </section>
+        <!--=============== Instalaciones y laboratorios===============-->
+        <section class="container section section__height" id="instalaciones">
+            <h2 class="section__title">Instalaciones y laboratorios</h2>
+            
+        </section>
+
+        <!--=============== Noticias ===============-->
+        <section class="section section__height" id="noticias">
+            <h2 class="section__title">Noticias</h2>
+
+            <div class="cont_noticias" >
+                <div class="card_noticias">
+                    <div class="face front">
+                        <img src="archivos/img/NOTICIAS/code.jpg" alt="">
+                        <h3>Google Developer Student Club</h3>
+                    </div>
+                    <div class="face back">
+                        <h2>Google Developer Student Club</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Harum facilis facere maxime aperiam fuga deleniti ipsam rerum porro.
+                            Ex earum neque praesentium, dignissimos nesciunt maiores corporis ea sequi ipsam dolorum?
+                        </p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_noticias">
+                    <div class="face front">
+                        <img src="archivos/img/NOTICIAS/club.jpg" alt="">
+                        <h3>Google Developer Student Club</h3>
+                    </div>
+                    <div class="face back">
+                        <h2>Google Developer Student Club</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Harum facilis facere maxime aperiam fuga deleniti ipsam rerum porro.
+                            Ex earum neque praesentium, dignissimos nesciunt maiores corporis ea sequi ipsam dolorum?
+                        </p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_noticias">
+                    <div class="face front">
+                        <img src="archivos/img/NOTICIAS/hackathon.png" alt="">
+                        <h3>Hackathon</h3>
+                    </div>
+                    <div class="face back">
+                        <h2>Hackathon</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Harum facilis facere maxime aperiam fuga deleniti ipsam rerum porro.
+                            Ex earum neque praesentium, dignissimos nesciunt maiores corporis ea sequi ipsam dolorum?
+                        </p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!--=============== Scroll desplazamiento===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+   
+    <script src="archivos/js/main.js"></script>
+    <script src="archivos/js/docentes.js"></script>
+
+    
+
+
+</body>
+
 </html>

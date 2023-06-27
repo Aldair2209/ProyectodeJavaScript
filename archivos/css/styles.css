@@ -37,6 +37,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -99,8 +100,6 @@ img {
   background: transparent;
   z-index: var(--z-fixed);
   transition: .4s;
-
-
 }
 
 /*=============== NAV ===============*/
@@ -119,8 +118,6 @@ img {
 
 .nav__logo {
   width: 100px;
-
-
 }
 
 @media screen and (max-width: 767px) {
@@ -402,8 +399,11 @@ section {
   }
 
   .hero-text h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0 0 30px;
+  }
+  .nav__link{
+    font-size: 10px;
   }
 }
 
@@ -420,6 +420,7 @@ section {
 
   .hero-img {
     text-align: center;
+  
   }
 
   .hero-img img {
