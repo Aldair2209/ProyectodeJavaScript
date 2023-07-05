@@ -1,0 +1,161 @@
+#historia{
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:5vh 2vh;
+  
+}
+.main_container{
+    background: #C2DEDC;
+    padding: 2vh 2vw;
+    border-radius: 15px;
+}
+.text_Icon{
+    display: flex;
+    column-gap: 5px;
+}
+.text{
+    margin-right: 2vw;
+    width: 98%;
+}
+.text p{
+    color: #000000;
+    text-align: justify;
+}
+.icon_historia{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain_button{
+    text-align: center;
+    padding: 20px;
+    margin-top: 2vh;
+    column-gap: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-neon{
+    border: 1px solid #3d3d3d;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: .2s;
+}
+.btn-neon:hover{
+    background: #ee7171;
+    box-shadow: 0 0 10px #FF0000, 0 0 40px #FF0000,0 0 80px #FF0000;
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+.span1{
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#9336B4);
+}
+.btn-neon:hover .span1{
+    left: 100%;
+    transition: 1s;
+}
+.span3{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#9336B4);
+}
+.btn-neon:hover .span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s;
+}
+.span2{
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#9336B4);
+}
+.btn-neon:hover .span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+}
+.span4{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,#9336B4);
+}
+.btn-neon:hover .span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+}
+.icon_historia img{
+    height: 150px;
+    width: 120px;
+    animation-name: balancing;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: bottom center;
+    transition: all .5s ease-in-out;
+}
+@keyframes balancing{
+    0% {
+        transform: rotateZ(0deg); 
+      }
+      25% {
+        transform: rotateZ(-15deg); 
+      }
+      50% {
+        transform: rotateZ(0deg);
+      }
+      75% {
+        transform: rotateZ(15deg); 
+      }
+      100% {
+        transform: rotateZ(0deg); 
+      }
+}
+
+
+.car_img.active{
+    transform: translateX(40%);
+}
+.car_img{
+    height: 50px;
+    transition:all 1.5s ease-in-out;
+}
+@media (max-width:650px) {
+    .icon_historia img{
+        display: none;
+    }
+    .icon_historia{
+        display: none;
+    }
+}
+@media (max-width:430px){
+    #historia{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+}
