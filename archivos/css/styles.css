@@ -42,7 +42,6 @@
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -78,7 +77,6 @@ img {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 1.5rem;
-  
 }
 
 .section__height {
@@ -91,7 +89,6 @@ img {
   /*968*/
   margin-left: 1rem;
   margin-right: 1rem;
-  
 }
 
 /*=============== HEADER ===============*/
@@ -100,7 +97,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: white;
+  background: transparent;
   z-index: var(--z-fixed);
   transition: .4s;
 }
