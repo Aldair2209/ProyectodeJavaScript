@@ -97,7 +97,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent;
+  background: white;
   z-index: var(--z-fixed);
   transition: .4s;
 }
