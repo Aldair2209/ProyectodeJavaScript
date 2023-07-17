@@ -169,7 +169,7 @@ img {
 /*Active link*/
 .active-link {
   position: relative;
-  color: var(--first-color);
+  color: var(--first-color); /*color total*/
   transition: .3s;
 }
 
@@ -180,7 +180,7 @@ img {
   bottom: -.5rem;
   width: 4px;
   height: 4px;
-  background-color: var(--first-color);
+  background-color: var(--first-color); /*punto*/
   border-radius: 50%;
 }
 
