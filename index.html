@@ -16,13 +16,17 @@
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="archivos/css/styles.css">
     <link rel="stylesheet" href="archivos/css/contactanos.css">
     <link rel="stylesheet" href="archivos/css/docentes.css">
     <link rel="stylesheet" href="archivos/css/noticias.css">
     <link rel="stylesheet" href="archivos/css/historia.css">
-    <link rel="stylesheet" href="archivos/css/laboratorios.css">
+    <!--<link rel="stylesheet" href="archivos/css/laboratorios.css">-->
     <link rel="stylesheet" href="archivos/css/footer.css">
 
 
@@ -206,7 +210,7 @@
         </section>
 
         <!--=============== Nuestros Docentes ===============-->
-        <section class="container section section__height" id="docente">
+        <section class="container section " id="docente">
             <h2 class="section__title">Nuestros Docentes</h2>
 
             <div class="wrapper">
@@ -245,12 +249,46 @@
                 </ul>
                 <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
+            <br />
+
+            <h4 class="title-docentes" data-aos="fade-right">"En la Facultad de Ingeniería de Sistemas e Informática,
+                contamos con un destacado equipo de profesores
+                altamente cualificados y apasionados. Son expertos en su campo, con amplia experiencia en sistemas e
+                informática, y se mantienen al tanto de las últimas tendencias y avances tecnológicos"</h4>
+
+            <div class="language__list">
+                <div class="language">
+                    <figure class="language__img--wrapper">
+                        <img width="100" height="100"
+                            src="https://img.icons8.com/hands/100/experimental-trust-hands.png"
+                            alt="experimental-trust-hands" class="language__img" />
+                    </figure>
+                    <span class="language__name">Empatía</span>
+                </div>
+                <div class="language">
+                    <figure class="language__img--wrapper">
+                        <img width="100" height="100" src="https://img.icons8.com/ios/50/customer-insight--v1.png"
+                            alt="customer-insight--v1" class="language__img" />
+                    </figure>
+                    <span class="language__name">Experiencia</span>
+                </div>
+                <div class="language">
+                    <figure class="language__img--wrapper">
+                        <img width="100" height="100" src="https://img.icons8.com/fluency/48/wedding-rings.png"
+                            alt="wedding-rings" class="language__img" />
+                    </figure>
+                    <span class="language__name">Compromiso</span>
+                </div>
+            </div>
+
+
+
 
         </section>
 
         <!--=============== Historia===============-->
-        <section class="container section section__height" id="historia">
-            <h2 class="section__title">Nuestra historia</h2>
+        <section class="container" id="historia">
+            <h2 class="section__title">Acerca de nuestra historia</h2>
 
             <div class="main_container">
                 <div class="text_Icon">
@@ -269,11 +307,11 @@
                         </p>
                     </div>
                     <div class="icon_historia">
-                        <img src="./archivos/img/HISTORIA/robot.png" alt="">
+                        <img src="./archivos/img/HISTORIA/chico_1.png" alt="">
                     </div>
                 </div>
                 <div class="contain_button">
-                    <img src="./archivos/img/HISTORIA/carrito.png" alt="" class="car_img">
+                    <img src="./archivos/img/HISTORIA/icon_historia.png" alt="" class="car_img">
                     <a href="#" class="btn-neon btn_go">
                         <span class="span1"></span>
                         <span class="span2"></span>
@@ -287,23 +325,24 @@
 
 
         <!--=============== Instalaciones y laboratorios===============-->
-        <section class="container section section__height" id="instalaciones">
+        <section class="sectionn" id="instalaciones">
             <h2 class="section__title">Instalaciones y laboratorios</h2>
-            <div class="slider_labs">
-                <ul>
-                    <li>
-                        <img src="./archivos/img/LABORATORIOS/1688595696431.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="./archivos/img/LABORATORIOS/1688595696440.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="./archivos/img/LABORATORIOS/1688595696451.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="./archivos/img/LABORATORIOS/1688595718700.jpg" alt="">
-                    </li>
-                </ul>
+            <div class="work_container bd_grid">
+                <div class="work_img">
+                    <img src="archivos/img/LABORATORIOS/1688595696431.jpg" alt="" />
+                </div>
+
+                <div class="work_img">
+                    <img src="archivos/img/LABORATORIOS/1688595696440.jpg" alt="" />
+                </div>
+
+                <div class="work_img">
+                    <img src="archivos/img/LABORATORIOS/1688595696451.jpg" alt="" />
+                </div>
+
+                <div class="work_img">
+                    <img src="archivos/img/LABORATORIOS/1688595718700.jpg" alt="" />
+                </div>
             </div>
         </section>
 
@@ -376,7 +415,8 @@
             </div>
             <div class="icons_footer">
                 <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href="https://www.facebook.com/UTP.Peru/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="https://www.facebook.com/UTP.Peru/?locale=es_LA" target="_blank"><i
+                        class="fa-brands fa-facebook fa-2x"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
             </div>
         </div>
@@ -456,7 +496,14 @@
     <script src="archivos/js/docentes.js"></script>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: false,
+        });
+    </script>
 
 </body>
 
